@@ -2,15 +2,25 @@
 name: Bug report
 about: Create a report to help us improve
 title: ''
-labels: bug
+labels: bug, New Feature
 assignees: ChAnGMiNBae, minjubu
 
 ---
 
+# ========================
+# 🐞 Bug Report Issue Form
+# ========================
 name: "🐞 Bug Report"
+
 description: "버그를 신고합니다"
+
 labels: ["type:bug", "triage"]
+
 body:
+
+  # ------------------------
+  # 1. 버그 설명
+  # ------------------------
   - type: textarea
     id: what-happened
     attributes:
@@ -20,6 +30,10 @@ body:
     validations:
       required: true
 
+
+  # ------------------------
+  # 2. 재현 단계
+  # ------------------------
   - type: textarea
     id: steps
     attributes:
@@ -29,12 +43,20 @@ body:
         2.
         3.
 
+
+  # ------------------------
+  # 3. 버전/브랜치 정보
+  # ------------------------
   - type: input
     id: version
     attributes:
       label: "버전/브랜치"
       placeholder: "e.g. v1.2.0, main"
 
+
+  # ------------------------
+  # 4. 심각도 선택
+  # ------------------------
   - type: dropdown
     id: severity
     attributes:
